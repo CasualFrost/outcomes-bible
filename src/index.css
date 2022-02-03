@@ -1,5 +1,6 @@
 /* CSS Custom Properties */
 :root {
+  --font-alt: 'Open Sans', sans-serif;
   --white: #FFFFFF;
   --tan-1: #FBF9F6;
   --tan-2: #E7E2DD;
@@ -8,6 +9,7 @@
   --orange: #F67F00;
   --text-light: #968c84;
   --text-dark: #615954;
+  --color-black: #0C0C0C;
 }
 
 *, *:before, *:after {
