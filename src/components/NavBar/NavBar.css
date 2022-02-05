@@ -1,0 +1,74 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .white:hover {
+      color: rgb(150, 150, 150);
+  }
+
+  .white{
+    color: white;
+    text-decoration: none;
+  }
+
+  .app__navbar-links {
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+  }
+  .app__navbar-linksmarginfix {
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+  }
+  
+  .app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  .app__navbar-linksmarginfix li {
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: rgb(150, 150, 150);
+  }
+  
+  .p__opensans:hover {
+    color: rgb(119, 119, 119);
+  }
+  
+  .app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .app__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .app__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+  }
+  

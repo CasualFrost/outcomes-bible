@@ -1,4 +1,5 @@
 import React from 'react';
+import "./NavBar.css";
 import { Link } from 'react-router-dom';
 import * as usersService from '../../utilities/users-service';
 
@@ -10,14 +11,20 @@ export default function NavBar(props) {
   }
 
   return (
-    <nav>
-      <Link to="/orders">Order History</Link>
-      &nbsp; | &nbsp;
-      <Link to="/orders/new">New Order</Link>
-      &nbsp; | &nbsp;
-      <span>Welcome, {props.user.name}</span>
-      &nbsp; | &nbsp;
-      <Link to="" onClick={handleLogOut}>Log Out</Link>
+    <nav className="app__navbar">
+      <div className="app__navbar-logo">
+      <h2>Outcomes Bible</h2>
+      </div>
+      <ul className="app__navbar-linksmarginfix">
+        <li className="p__opensans"><Link  className="app__navbar-links" to="/orders">Order History</Link></li>
+        <li className="p__opensans"><Link className="app__navbar-links" to="/orders/new">New Order</Link></li>
+        <li className="p__opensans"><a className="app__navbar-links" href="#list">My Lists</a></li>
+      </ul>
+      <div className="app__navbar-login">
+        <span>Welcome, {props.user.name}</span>
+        &nbsp; | &nbsp;
+      </div>
+        <Link className="white" to="" onClick={handleLogOut}>Log Out</Link>
     </nav>
   );
 }
