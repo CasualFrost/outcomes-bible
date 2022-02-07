@@ -1,15 +1,13 @@
-// import { checkToken } from '../../utilities/users-service';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import * as listAPI from '../../utilities/get-list';
 import CardTest from '../../components/CardTest/CardTest'
 
-
-export default function ListDetailPage() {
-
+export default function ListDetail() {
   const [list, setList] = useState([]);
   useEffect(function () {
     async function getManyLists() {
       const Res = await listAPI.getLists()
+      console.log(Res)
       setList(Res)
     }
     getManyLists();
