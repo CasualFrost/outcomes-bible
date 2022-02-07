@@ -1,4 +1,4 @@
-const Resource = require('../../models/item');
+const Resource = require('../../models/resource');
 
 module.exports = {
 //   index,
@@ -20,6 +20,5 @@ module.exports = {
 
 async function getResource(req, res) {
     const resource = await Resource.find({})
-    console.log(resource)
     res.json(resource);
 }
