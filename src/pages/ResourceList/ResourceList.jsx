@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import * as resourceAPI from '../../utilities/get-resource';
+import * as resourceAPI from '../../utilities/resources-api';
 import CardTest from '../../components/CardTest/CardTest'
 
 

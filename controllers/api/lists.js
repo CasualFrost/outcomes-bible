@@ -4,7 +4,8 @@ module.exports = {
   getList
 };
 
-async function getList(req, res) {
-    const list = await List.find({})
-    res.json(list);
+function getList(req, res) {
+    List.find({}).populate('resources').exec(function(err, lists) {
+        res.json(lists);
+    })
 }
