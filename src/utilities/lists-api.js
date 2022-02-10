@@ -9,3 +9,7 @@ export function getLists() {
 export function getById(id) {
   return sendRequest(`${BASE_URL}/${id}`);
 }
+
+export function addToList(listId, resourceId) {
+  return sendRequest(`${BASE_URL}/${listId}/resources/${resourceId}`, "POST")
+}
