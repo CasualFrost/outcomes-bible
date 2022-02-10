@@ -1,7 +1,7 @@
 require('dotenv').config();
 require('./config/database');
 
-
+const User = require('./models/user');
 const Resource = require('./models/resource');
 const List = require('./models/list');
 
@@ -249,10 +249,12 @@ const List = require('./models/list');
       // {name: '', tag: '', url: '', description: ``},
       // {name: '', tag: '', url: '', description: ``},
   ]);
-  console.log(resources)
+
+  const user = await User.findOne({})
 
   const list = await List.create({
-    name: 'Resume/Cover Letter', tag: 'Resume + Cover Letter'
+    name: 'Resume/Cover Letter', tag: 'Resume + Cover Letter',
+    user: user._id
   })
   list.resources.push(resources[0]._id)
   list.resources.push(resources[1]._id)

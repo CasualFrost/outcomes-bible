@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const resourcesCtrl = require('../../controllers/api/resources');
 
-// GET /api/items
+// GET /api/resources
 router.get('/', resourcesCtrl.getResource);
-// GET /api/items/:id
-// router.get('/:id', itemsCtrl.show);
+// GET /api/resources/:id
+router.get('/:id', resourcesCtrl.show);
 
 module.exports = router;

@@ -2,7 +2,7 @@ const Resource = require('../../models/resource');
 
 module.exports = {
 //   index,
-//   show,
+  show,
   getResource
 };
 
@@ -13,10 +13,10 @@ module.exports = {
 //   res.json(resources);
 // }
 
-// async function show(req, res) {
-//   const resource = await Resource.findById(req.params.id);
-//   res.json(resource);
-// }
+async function show(req, res) {
+  const resource = await Resource.findById(req.params.id);
+  res.json(resource);
+}
 
 async function getResource(req, res) {
     const resource = await Resource.find({})
