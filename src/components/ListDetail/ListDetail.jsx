@@ -34,6 +34,7 @@ export default function ListDetail({ list }) {
                     )}
                 </Row>
             </Container>
+            <br></br>
         </>
 
     );

@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import {Link} from 'react-router-dom';
 
 
 export default function CardTest({ resource }) {
@@ -13,7 +14,7 @@ export default function CardTest({ resource }) {
                 <Card.Text>
                     {resource.description.slice(0, 100)}
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Link to={`/resources/${resource._id}`}><Button variant="primary">Details</Button></Link>
             </Card.Body>
         </Card>
     )

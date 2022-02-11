@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import * as resourcesApi from '../../utilities/resources-api';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import * as listsApi from "../../utilities/lists-api"
 
 export default function ResourceDetailPage() {
     const [lists, setLists] = useState([])
     const [resource, setResource] = useState({})
     const { id } = useParams();
+    const navigate = useNavigate();
 
     useEffect(function () {
         async function fetchResource() {
@@ -31,6 +32,7 @@ export default function ResourceDetailPage() {
         evt.preventDefault()
         const listId = evt.target.querySelector('select').value
         await listsApi.addToList(listId, resource._id)
+        navigate('/lists')
     }
 
     return (
