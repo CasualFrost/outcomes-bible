@@ -13,3 +13,7 @@ export function getById(id) {
 export function addToList(listId, resourceId) {
   return sendRequest(`${BASE_URL}/${listId}/resources/${resourceId}`, "POST")
 }
+
+export function create(formData) {
+  return sendRequest(BASE_URL, "POST", {formData});
+}

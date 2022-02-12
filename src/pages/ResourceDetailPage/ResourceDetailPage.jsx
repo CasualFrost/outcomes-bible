@@ -47,7 +47,7 @@ export default function ResourceDetailPage() {
                                 {resource.tag}
                             </Card.Text>
                             <Card.Text>
-                                {resource.url}
+                            Website Link: <a href={resource.url} target="_blank">{resource.url}</a>
                             </Card.Text>
                             <Card.Text>
                                 {resource.description}
