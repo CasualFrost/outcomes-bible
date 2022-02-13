@@ -1,0 +1,15 @@
+.margin {
+    margin: 5px;
+}
+
+
+.borderbig {
+    border: 1px solid rgb(182, 180, 180) !important;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgb(172, 171, 171);
+}
+
+div {
+    border: 0px !important;
+    border-radius: 15px !important;
+}

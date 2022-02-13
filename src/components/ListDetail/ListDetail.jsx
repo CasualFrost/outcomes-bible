@@ -20,7 +20,7 @@ export default function ListDetail({ list }) {
                 <Row>
                     {list.resources.map(r =>
                         <Card style={{ width: '33.3%' }}>
-                            <Card.Body>
+                            <Card.Body >
                                 <Card.Title>{r.name}</Card.Title>
                                 <Card.Text>
                                     {r.tag}

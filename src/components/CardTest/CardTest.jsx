@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './CardTest.css'
+
 
 export default function CardTest({ resource }) {
     return (
-        <><Container className="border" style={{ width: '200rem' }}>
-            <Row>
-                <Card style={{ width: '33.3%' }}>
-                    <Card.Body>
+                <Card className="margin" id="force" style={{ width: '30%' }}>
+                    <Card.Body className="borderbig">
                         <Card.Title>{resource.name}</Card.Title>
                         <Card.Text>
                             {resource.tag}
@@ -21,7 +21,5 @@ export default function CardTest({ resource }) {
                         <Link to={`/resources/${resource._id}`}><Button variant="primary">Details</Button></Link>
                     </Card.Body>
                 </Card>
-            </Row>
-        </Container><br></br></>
     )
 }

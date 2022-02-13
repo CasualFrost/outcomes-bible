@@ -5,3 +5,8 @@
 .cardsize {
     width: 180px;
 }
+
+#force {
+    display: inline-block;
+}
+
