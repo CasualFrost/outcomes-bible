@@ -31,6 +31,8 @@ You'll also be able to create a list in the "My Lists" page and allocate the res
 
 Start creating your list now!
 
+If you want to checkout my Trello board then click [here](https://trello.com/b/CIQiwF7g/outcomes-bible).
+
 ### Next Steps
 
 1. Add removal functionality of resources from the list.
