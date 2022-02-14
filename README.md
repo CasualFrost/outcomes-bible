@@ -6,7 +6,7 @@ Thanks for visiting my [Outcomes Bible](https://outcomes-bible.herokuapp.com/res
 
 As we progress through our courses, study lessons and schooling we tend to rack up a ton of resources. We might have some for resumes, networking, job boards, interviews and so much more. How do you currently keep track of them? Maybe on your notes on the phone or written down or maybe just saved in bookmarks. These methods might not have information being displayed for you regarding the resource or an easy way to scan through your own list. Outcomes bible is here to help with that by providing a place with tons of resources at your disposal where you'll be able to create a list of your choosing and allocate the resources where you want. Your bible of resources for recent graduates or those wanted to read up on new resources.
 
-![Resource Page](https://i.imgur.com/RPMMMzt.png)
+![Resource Page](https://i.imgur.com/FsHt6Ky.png)
 
 ### Technologies Used
 
