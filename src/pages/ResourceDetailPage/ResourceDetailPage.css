@@ -1,0 +1,17 @@
+.borderbig {
+    border: 1px solid rgb(182, 180, 180) !important;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgb(172, 171, 171);
+}
+
+.buttonmix {
+    border-radius: 10px
+}
+
+.middle {
+    padding-left: 430px;
+}
+
+.width {
+    width: 200px;
+}

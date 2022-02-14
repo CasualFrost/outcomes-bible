@@ -8,6 +8,8 @@ import ResourceList from '../ResourceList/ResourceList';
 import NavBar from '../../components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ResourceDetailPage from '../ResourceDetailPage/ResourceDetailPage';
+import Footer from '../../components/Footer/Footer';
+
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -22,6 +24,7 @@ export default function App() {
             <Route path="/resources" element={<ResourceList />} />
             <Route path="/resources/:id" element={<ResourceDetailPage />} />
           </Routes>
+          <Footer />
         </>
         :
         <AuthPage setUser={setUser} />

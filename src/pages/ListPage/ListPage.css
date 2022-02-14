@@ -1,0 +1,18 @@
+.formstyle {
+    border: 1px solid rgb(194, 194, 194);
+    background-color: rgb(241, 241, 241);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 710px;
+    padding: 5px;
+}
+
+.green {
+    background-color: rgb(72, 255, 72);
+    color: white;
+    border: 0px solid transparent !important;
+    width: 150px;
+}

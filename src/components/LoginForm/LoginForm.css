@@ -1,0 +1,11 @@
+.mix {
+    width: 500px;
+    align-items: center;
+    margin: 0px 0px 0px 470px !important;
+}
+
+.button {
+    /* background-color: rgb(85, 153, 255) !important; */
+    width: 455px !important;
+    border-radius: 25px !important;
+}

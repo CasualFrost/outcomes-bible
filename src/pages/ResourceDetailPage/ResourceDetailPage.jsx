@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 // import Button from 'react-bootstrap/Button';
 import * as listsApi from "../../utilities/lists-api"
+import "./ResourceDetailPage.css"
+
 
 export default function ResourceDetailPage() {
     const [lists, setLists] = useState([])
@@ -37,8 +39,13 @@ export default function ResourceDetailPage() {
 
     return (
         <>
-            <br></br>
-            <Container className="border" style={{ width: '200rem' }}>
+            <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Resource Detail</h1>
+            <Container className="borderbig" style={{ width: '200rem' }}>
                 <Row>
                     <Card style={{ width: '100%' }}>
                         <Card.Body>
@@ -54,11 +61,11 @@ export default function ResourceDetailPage() {
                             </Card.Text>
                             {
                                 lists.length ?
-                                    <form onSubmit={handleSubmit} style={{}}>
-                                        <select>
+                                    <form className="middle" onSubmit={handleSubmit} style={{}}>
+                                        <select className="width">
                                             {listOptions}
                                         </select>
-                                        <button style={{width: '30%' }}>Add to the list</button>
+                                        <button className="buttonmix" style={{width: '30%' }}>Add to the list</button>
                                     </form>
                                     :
                                     <h3> No List Yet </h3>

@@ -15,10 +15,20 @@ export default function ResourceList() {
 
   return (
     <>
-      <h1>Ayo</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+      <h1>Resource List</h1>
       {resource.map((r) =>
         <CardTest resource={r} />
       )}
+      <br />
+    <br />
+    <br />
+    <br />
+    <br />
     </>
   );
 }

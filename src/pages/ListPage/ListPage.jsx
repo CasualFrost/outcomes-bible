@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as listAPI from '../../utilities/lists-api';
 import ListDetail from '../../components/ListDetail/ListDetail'
-
+import "./ListPage.css"
 
 export default function ListPage() {
   const [lists, setLists] = useState([]);
@@ -26,15 +26,20 @@ export default function ListPage() {
 
   return (
     <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
       <h1>My Lists</h1>
       {lists.map((l) =>
         <ListDetail list={l} />
       )}
       <div>
-        <form onSubmit={handleSubmit}>
+        <form className="formstyle" onSubmit={handleSubmit}>
           <label>List Name:</label>
-          <input name="name" value={formData} onChange={(e) => setFormData(e.target.value)}></input>
-          <input type="submit" class="" value="Create List" />
+          <input className="width" name="name" value={formData} onChange={(e) => setFormData(e.target.value)}></input>
+          <input className="green"type="submit" class="" value="Create List" />
         </form>
       </div>
     </>

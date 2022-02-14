@@ -18,7 +18,7 @@ export default function NavBar(props) {
       <ul className="app__navbar-linksmarginfix">
         <li className="p__opensans"><Link className="app__navbar-links" to="/orders/new">Home</Link></li>
         <li className="p__opensans"><Link  className="app__navbar-links" to="/resources">Resources</Link></li>
-        <li className="p__opensans"><Link  className="app__navbar-links" to="/lists">My Lists</Link></li>
+        <li className="p__opensans padding"><Link  className="app__navbar-links" to="/lists">My Lists</Link></li>
       </ul>
       <div className="app__navbar-login">
         <span>Welcome, {props.user.name}</span>

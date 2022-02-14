@@ -2,13 +2,13 @@
 :root {
   --font-alt: 'Open Sans', sans-serif;
   --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
+  --tan-1: #ebebeb;
+  --tan-2: #dbdbdb;
+  --tan-3: #9e9e9e;
+  --tan-4: #70ff4d;
   --orange: #F67F00;
-  --text-light: #968c84;
-  --text-dark: #615954;
+  --text-light: #919090;
+  --text-dark: #818181;
   --color-black: #0C0C0C;
 }
 
@@ -82,7 +82,7 @@ code {
 .form-container {
   padding: 3vmin;
   background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
+  border: .1vmin solid;
   border-radius: 1vmin;
 }
 
@@ -122,12 +122,12 @@ button, a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: rgb(27, 255, 19);
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
+  border: .1vmin solid;
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;
@@ -145,7 +145,7 @@ button.btn-xs {
 
 button:disabled, form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: var(--tan-4);
+  background-color: rgb(197, 197, 197);
 }
 
 button[type="submit"] {
